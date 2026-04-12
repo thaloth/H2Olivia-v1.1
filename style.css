@@ -147,6 +147,13 @@ section {
     letter-spacing: -0.5px;
 }
 
+.logo a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 .nav-menu {
     display: flex;
     gap: 2rem;
@@ -225,7 +232,7 @@ section {
 
 .hero-grid {
     display: flex;
-    align-items: center;
+    align-items:center;    
     gap: 3rem;
     flex-wrap: wrap;
 }
@@ -274,6 +281,12 @@ section {
     font-size: 12rem;
     animation: float 3s ease-in-out infinite;
     display: inline-block;
+}
+
+.water-symbol img {
+    width: 600px;
+    height: auto;
+    display: block;
 }
 
 .hero-note {
@@ -345,11 +358,13 @@ section {
 }
 
  .product-icon img {
-    width: 20rem;
+    width: 13rem;
+    aspect-ratio: 1 / 1;
     height: auto;
     display: block;
     margin: 0 auto 0.5rem;
-
+    
+ }
 .product-card h3 {
     font-size: 1.6rem;
     color: var(--primary-deep);
