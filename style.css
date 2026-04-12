@@ -344,6 +344,12 @@ section {
     margin-bottom: 0.5rem;
 }
 
+ .product-icon img {
+    width: 20rem;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+
 .product-card h3 {
     font-size: 1.6rem;
     color: var(--primary-deep);
