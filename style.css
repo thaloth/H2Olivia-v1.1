@@ -73,6 +73,12 @@ section {
     border-radius: 4px;
 }
 
+.footer-logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -284,7 +290,7 @@ section {
 }
 
 .water-symbol img {
-    width: 600px;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -376,6 +382,92 @@ section {
     font-weight: 800;
     color: var(--accent-wave);
     margin: 0.5rem 0;
+}
+
+/* ========== MISSION & VISION SECTION ========== */
+.mission-vision {
+    background: linear-gradient(135deg, #eef7fc 0%, #e0f0f7 100%);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.mv-card {
+    background: white;
+    border-radius: 32px;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+    box-shadow: var(--soft-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.mv-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+}
+
+.mv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-bright), var(--accent-wave));
+}
+
+.mv-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.mv-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary-deep);
+    margin-bottom: 1rem;
+}
+
+.mv-card p {
+    color: #2c4452;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.mv-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.mv-points span {
+    background: var(--water-fresh);
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-deep);
+}
+
+.mission .mv-points span {
+    background: #d4f1f9;
+}
+
+.vision .mv-points span {
+    background: #e8f5e9;
+}
+
+.values p {
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 1.8;
 }
 
 /* ========== ABOUT SECTION ========== */
